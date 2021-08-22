@@ -1,0 +1,140 @@
+header{ 
+    background: rgb(27, 27, 27) url(https://images.pexels.com/photos/1028223/pexels-photo-1028223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+   }
+
+   .main{
+       display: flex;
+       flex-direction: row;
+       overflow: unset;
+   }
+
+   #image_small {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+   }
+
+   #image_large{
+    border-radius: 50%;
+    height: 200px;
+
+   }
+
+   #profile_image{
+    border-radius: 50%;
+    height: 200px;
+   }
+
+   #sidebar{
+       width: 30%;
+        padding: 40px;
+         background-color: rgb(235, 235, 235)
+   }
+
+   footer{
+       background-color: rgb(199, 199, 199);
+       text-align: center;
+       padding: 20px;
+   }
+
+   #content{
+       width: 80%;
+       margin: 50px;
+   }
+
+   .icons {
+    width: 30px;
+    padding: 5px;
+    
+}
+
+p, li{
+    font-family: poppins;
+    font-weight: 300;
+}
+
+h3{
+    font-family: poppins;
+    font-weight: 400;
+}
+
+h2{
+    font-family: poppins;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1{
+    font-family: poppins;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+.grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+
+.grid-item{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+
+    .grid-item{
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sidebar{
+        width: 20%;
+         padding: 30px;
+          background-color: rgb(235, 235, 235)
+    }
+}    
+
+@media only screen and (max-width: 550px) {
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.grid-item{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: table-row;
+}
+
+#sidebar{
+    width: 100%;
+     padding: 40px;
+      background-color: rgb(235, 235, 235)
+}
+
+#content{
+    width: 100%;
+    margin: 50px;
+}
+}       
